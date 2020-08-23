@@ -1,0 +1,8 @@
+2020-08-06 23:26:27.294 [ INFO] [           main] c.m.s.c.LoggingInSpringBootApplication   : No active profile set, falling back to default profiles: default
+2020-08-06 23:26:27.920 [ INFO] [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2020-08-06 23:26:27.921 [ INFO] [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-08-06 23:26:27.921 [ INFO] [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-06 23:26:27.987 [ INFO] [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-08-06 23:26:28.088 [ INFO] [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-06 23:26:28.177 [ INFO] [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2020-08-06 23:26:28.207 [ INFO] [           main] c.m.s.c.LoggingInSpringBootApplication   : Started LoggingInSpringBootApplication in 1.493 seconds (JVM running for 2.138)

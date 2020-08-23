@@ -1,0 +1,7 @@
+2020-08-06 23:21:13.844 [ERROR] [nio-8080-exec-5] c.m.s.c.c.LoggingController              : Logging with level ERROR
+2020-08-06 23:21:14.149 [DEBUG] [nio-8080-exec-6] c.m.s.c.c.LoggingController              : Logging with level DEBUG
+2020-08-06 23:21:14.149 [ INFO] [nio-8080-exec-6] c.m.s.c.c.LoggingController              : Logging with level INFO
+2020-08-06 23:21:14.149 [ WARN] [nio-8080-exec-6] c.m.s.c.c.LoggingController              : Logging with level WARN
+2020-08-06 23:21:14.149 [ERROR] [nio-8080-exec-6] c.m.s.c.c.LoggingController              : Logging with level ERROR
+2020-08-06 23:26:27.286 [ INFO] [           main] c.m.s.c.LoggingInSpringBootApplication   : Starting LoggingInSpringBootApplication on DESKTOP-VBH5P79 with PID 18072 (C:\sbip\workspace\Idea\chapter02\logging-in-spring-boot\target\classes started by musib in C:\sbip\workspace\Idea\chapter02\logging-in-spring-boot)
+2020-08-06 23:26:27.293 [DEBUG] [           main] c.m.s.c.LoggingInSpringBootApplication   : Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE

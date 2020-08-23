@@ -1,0 +1,9 @@
+2020-08-06 23:26:45.428 [ INFO] [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-06 23:26:45.443 [ INFO] [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-08-06 23:26:45.447 [ INFO] [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 4 ms
+2020-08-06 23:26:45.473 [DEBUG] [nio-8080-exec-1] c.m.s.c.c.LoggingController              : Logging with level DEBUG
+2020-08-06 23:26:45.473 [ INFO] [nio-8080-exec-1] c.m.s.c.c.LoggingController              : Logging with level INFO
+2020-08-06 23:26:45.473 [ WARN] [nio-8080-exec-1] c.m.s.c.c.LoggingController              : Logging with level WARN
+2020-08-06 23:26:45.482 [ERROR] [nio-8080-exec-1] c.m.s.c.c.LoggingController              : Logging with level ERROR
+2020-08-06 23:27:42.821 [DEBUG] [nio-8080-exec-3] c.m.s.c.c.LoggingController              : Logging with level DEBUG
+2020-08-06 23:27:42.821 [ INFO] [nio-8080-exec-3] c.m.s.c.c.LoggingController              : Logging with level INFO
