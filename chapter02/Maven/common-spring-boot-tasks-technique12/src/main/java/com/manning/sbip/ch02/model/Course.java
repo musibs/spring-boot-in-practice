@@ -1,35 +1,33 @@
 package com.manning.sbip.ch02.model;
 
-import javax.persistence.*;
-import java.util.UUID;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Entity
-@Table(name = "COURSE_DETAILS")
 public class Course {
 
 	@Id
-	@Column(name = "ID")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
-
-	@Column(name = "NAME")
 	private String name;
-
-	@Column(name = "DESCRIPTION")
+	private String category;
 	private String description;
 
 	public Course() {}
 
-	public Course(String name, String description) {
+	public Course(String name, String category, String description) {
 		this.name = name;
+		this.category = category;
 		this.description = description;
 	}
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -39,6 +37,14 @@ public class Course {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
 	}
 
 	public String getDescription() {
