@@ -4,19 +4,26 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 import com.manning.sbip.ch02.model.Course;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+import java.util.concurrent.CompletableFuture;
+import java.util.stream.Stream;
 
 @Repository
 public interface CourseRepository extends CrudRepository<Course, Long> {
 
-    public Iterable<Course> findAllByName(String name);
+    Stream<Course> streamAllByCategory(String category);
 
-    public Iterable<Course> readAllByName(String name);
+    Iterable<Course> findAllByCategory(String category);
 
-    public boolean existsByName(String name);
+    Iterable<Course> findAllByCategoryOrderByName(String category);
 
-    public boolean countByCategory(String category);
+    boolean existsByName(String name);
 
-    public Course findByNameOrCategory(String name, String category);
+    long countByCategory(String category);
 
-    public Iterable<Course> findByNameLike(String name);
+    List<Course> findByNameOrCategory(String name, String category);
+
+    Iterable<Course> findByNameStartsWith(String name);
 }

@@ -1,11 +1,9 @@
 package com.manning.sbip.ch02.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@Table(name = "COURSE_DETAILS")
 public class Course {
 
 	@Id
@@ -57,10 +55,11 @@ public class Course {
 
 	@Override
 	public String toString() {
-		return "Course [" +
+		return "Course{" +
 				"id=" + id +
 				", name='" + name + '\'' +
+				", category='" + category + '\'' +
 				", description='" + description + '\'' +
-				']';
+				'}';
 	}
 }
