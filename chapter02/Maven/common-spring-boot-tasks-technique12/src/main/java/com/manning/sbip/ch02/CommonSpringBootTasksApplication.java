@@ -63,7 +63,7 @@ public class CommonSpringBootTasksApplication {
                 System.out.println("\t " + course.getId() + ") " + course);
             }
 
-            System.out.println("\nFind courses where course name start with `Getting Started`");
+            System.out.println("\nFind courses where course name starts with `Getting Started`");
             System.out.println("==================================================================================");
             for (Course course : courseRepository.findByNameStartsWith("Getting Started")) {
                 System.out.println("\t " + course.getId() + ") " + course);
@@ -73,8 +73,8 @@ public class CommonSpringBootTasksApplication {
         };
     }
 
-    @Bean
-    @Order(2)
+    //@Bean
+    //@Order(2)
     public CommandLineRunner printCoursesAsync(CompletableCourseService completableCourseService) {
         return args -> {
             CompletableFuture<Iterable<Course>> springCourses = completableCourseService.findAllByCategoryAsync("Spring");
@@ -87,6 +87,7 @@ public class CommonSpringBootTasksApplication {
             javaScriptCourses.get().forEach(System.out::println);
         };
     }
+
     @Bean
     public Executor taskExecutor() {
         ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
