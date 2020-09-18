@@ -1,9 +1,11 @@
 package com.manning.sbip.ch02.model;
 
+
 import javax.persistence.*;
 
 @Entity
 @Table(name = "COURSE_DETAILS")
+@NamedQuery(name = "Course.findAllByCategory", query = "select c from Course c where c.category=?1")
 public class Course {
 
 	@Id
