@@ -11,8 +11,6 @@ import java.util.stream.Stream;
 @Repository
 public interface CourseRepository extends CrudRepository<Course, Long> {
 
-    Course findByDescription(String description);
-
     Stream<Course> streamAllByCategory(String category);
 
     Iterable<Course> findAllByCategory(String category);
@@ -26,4 +24,6 @@ public interface CourseRepository extends CrudRepository<Course, Long> {
     Iterable<Course> findByNameOrCategory(String name, String category);
 
     Iterable<Course> findByNameStartsWith(String name);
+
+    Iterable<Course> findAllByName(String name);
 }

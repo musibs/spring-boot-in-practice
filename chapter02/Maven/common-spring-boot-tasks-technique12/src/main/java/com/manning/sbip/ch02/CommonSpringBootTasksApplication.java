@@ -73,16 +73,18 @@ public class CommonSpringBootTasksApplication {
         };
     }
 
-    //@Bean
-    //@Order(2)
+    @Bean
+    @Order(2)
     public CommandLineRunner printCoursesAsync(CompletableCourseService completableCourseService) {
         return args -> {
+
             CompletableFuture<Iterable<Course>> springCourses = completableCourseService.findAllByCategoryAsync("Spring");
             CompletableFuture<Iterable<Course>> javaScriptCourses = completableCourseService.findAllByNameAsync("JavaScript for All");
 
             CompletableFuture.allOf(springCourses, javaScriptCourses).join();
 
-            System.out.println("\nCompletable Future Example");
+            System.out.println("\nAsync invocation of repository methods with CompletableFuture:");
+            System.out.println("============================================================:");
             springCourses.get().forEach(System.out::println);
             javaScriptCourses.get().forEach(System.out::println);
         };
