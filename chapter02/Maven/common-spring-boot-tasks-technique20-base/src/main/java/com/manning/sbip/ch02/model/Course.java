@@ -21,9 +21,6 @@ public class Course {
 	private int rating;
 	private String description;
 
-	@ManyToMany(mappedBy = "courses")
-	private Set<Author> authors = new HashSet<>();
-
 
 	public Course() {}
 
