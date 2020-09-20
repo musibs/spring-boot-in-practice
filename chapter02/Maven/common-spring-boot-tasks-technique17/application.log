@@ -1,0 +1,23 @@
+2020-09-19 19:47:30.236  INFO 31200 --- [main] c.m.s.c.CommonSpringBootTasksApplication : Starting CommonSpringBootTasksApplication on DESKTOP-VBH5P79 with PID 31200 (C:\sbip\spring-boot-in-practice\chapter02\Maven\common-spring-boot-tasks-technique17\target\classes started by musib in C:\sbip\spring-boot-in-practice\chapter02\Maven\common-spring-boot-tasks-technique17)
+2020-09-19 19:47:30.239  INFO 31200 --- [main] c.m.s.c.CommonSpringBootTasksApplication : No active profile set, falling back to default profiles: default
+2020-09-19 19:47:31.167  INFO 31200 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-19 19:47:31.240  INFO 31200 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61ms. Found 2 JPA repository interfaces.
+2020-09-19 19:47:31.770  INFO 31200 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-19 19:47:31.779  INFO 31200 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-19 19:47:31.779  INFO 31200 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-19 19:47:31.918  INFO 31200 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-19 19:47:31.919  INFO 31200 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1617 ms
+2020-09-19 19:47:32.078  INFO 31200 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-19 19:47:32.121  INFO 31200 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-09-19 19:47:32.169  WARN 31200 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-09-19 19:47:32.187  INFO 31200 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-09-19 19:47:32.390  INFO 31200 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-09-19 19:47:32.518  INFO 31200 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-09-19 19:47:32.574  INFO 31200 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-19 19:47:32.576  INFO 31200 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-19 19:47:32.711  INFO 31200 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-09-19 19:47:32.738  INFO 31200 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-09-19 19:47:33.440  INFO 31200 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-09-19 19:47:33.449  INFO 31200 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-19 19:47:33.735  INFO 31200 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-19 19:47:33.744  INFO 31200 --- [main] c.m.s.c.CommonSpringBootTasksApplication : Started CommonSpringBootTasksApplication in 3.869 seconds (JVM running for 4.333)

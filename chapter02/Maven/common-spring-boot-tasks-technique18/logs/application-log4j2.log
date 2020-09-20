@@ -1,0 +1,82 @@
+2020-09-19 21:46:09.499 [ INFO] [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 6.1.5.Final
+2020-09-19 21:46:09.579 [ INFO] [           main] c.m.s.c.CommonSpringBootTasksApplication : Starting CommonSpringBootTasksApplication on DESKTOP-VBH5P79 with PID 30092 (C:\sbip\spring-boot-in-practice\chapter02\Maven\common-spring-boot-tasks-technique18\target\classes started by musib in C:\sbip\spring-boot-in-practice\chapter02\Maven\common-spring-boot-tasks-technique18)
+2020-09-19 21:46:09.582 [DEBUG] [           main] c.m.s.c.CommonSpringBootTasksApplication : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-19 21:46:09.583 [ INFO] [           main] c.m.s.c.CommonSpringBootTasksApplication : No active profile set, falling back to default profiles: default
+2020-09-19 21:46:10.245 [ INFO] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-19 21:46:10.310 [ INFO] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58ms. Found 2 JPA repository interfaces.
+2020-09-19 21:46:10.829 [ INFO] [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2020-09-19 21:46:10.829 [ INFO] [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-09-19 21:46:10.830 [ INFO] [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-19 21:46:10.986 [ INFO] [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-09-19 21:46:11.134 [ INFO] [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-19 21:46:11.176 [ INFO] [         task-1] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-09-19 21:46:11.251 [ INFO] [         task-1] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-09-19 21:46:11.433 [ INFO] [         task-1] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-09-19 21:46:11.553 [ INFO] [         task-1] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-09-19 21:46:11.572 [ INFO] [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2020-09-19 21:46:11.611 [ INFO] [           main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-19 21:46:11.741 [ INFO] [         task-1] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-09-19 21:46:11.772 [ INFO] [         task-1] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-09-19 21:46:12.479 [ INFO] [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-09-19 21:46:12.489 [ INFO] [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-19 21:46:12.767 [ INFO] [           main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-19 21:46:12.773 [ INFO] [           main] c.m.s.c.CommonSpringBootTasksApplication : Started CommonSpringBootTasksApplication in 3.593 seconds (JVM running for 4.496)
+2020-09-19 21:46:12.987 [ INFO] [           main] c.m.s.c.CommonSpringBootTasksApplication : 
+The Course and Author information for Author ID 2:
+2020-09-19 21:46:13.023 [ INFO] [           main] c.m.s.c.CommonSpringBootTasksApplication : AuthorCourseDto{courseName='Rapid Spring Boot Application Development', courseRating=4, courseDescription='Spring Boot gives all the power of the Spring Framework without all of the complexity', authorName='Steve Muller', authorBio='Author of several popular Spring and Pyhton courses'}
+2020-09-19 21:46:13.023 [ INFO] [           main] c.m.s.c.CommonSpringBootTasksApplication : AuthorCourseDto{courseName='Getting Started with Spring Security DSL', courseRating=2, courseDescription='Learn Spring Security DSL in easy steps', authorName='Steve Muller', authorBio='Author of several popular Spring and Pyhton courses'}
+2020-09-19 21:46:13.023 [ INFO] [           main] c.m.s.c.CommonSpringBootTasksApplication : AuthorCourseDto{courseName='Getting Started with Spring Cloud Kubernetes', courseRating=4, courseDescription='Master Spring Boot application deployment with Kubernetes', authorName='Steve Muller', authorBio='Author of several popular Spring and Pyhton courses'}
+2020-09-19 21:46:46.733 [ INFO] [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 6.1.5.Final
+2020-09-19 21:46:46.807 [ INFO] [           main] c.m.s.c.CommonSpringBootTasksApplication : Starting CommonSpringBootTasksApplication on DESKTOP-VBH5P79 with PID 6260 (C:\sbip\spring-boot-in-practice\chapter02\Maven\common-spring-boot-tasks-technique18\target\classes started by musib in C:\sbip\spring-boot-in-practice\chapter02\Maven\common-spring-boot-tasks-technique18)
+2020-09-19 21:46:46.812 [DEBUG] [           main] c.m.s.c.CommonSpringBootTasksApplication : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-19 21:46:46.813 [ INFO] [           main] c.m.s.c.CommonSpringBootTasksApplication : No active profile set, falling back to default profiles: default
+2020-09-19 21:46:47.506 [ INFO] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-19 21:46:47.560 [ INFO] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47ms. Found 2 JPA repository interfaces.
+2020-09-19 21:46:48.141 [ INFO] [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2020-09-19 21:46:48.142 [ INFO] [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-09-19 21:46:48.142 [ INFO] [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-19 21:46:48.277 [ INFO] [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-09-19 21:46:48.441 [ INFO] [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-19 21:46:48.504 [ INFO] [         task-1] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-09-19 21:46:48.594 [ INFO] [         task-1] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-09-19 21:46:48.805 [ INFO] [         task-1] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-09-19 21:46:48.981 [ INFO] [         task-1] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-09-19 21:46:48.998 [ INFO] [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2020-09-19 21:46:49.034 [ INFO] [           main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-19 21:46:49.173 [ INFO] [         task-1] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-09-19 21:46:49.203 [ INFO] [         task-1] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-09-19 21:46:49.929 [ INFO] [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-09-19 21:46:49.937 [ INFO] [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-19 21:46:50.239 [ INFO] [           main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-19 21:46:50.248 [ INFO] [           main] c.m.s.c.CommonSpringBootTasksApplication : Started CommonSpringBootTasksApplication in 3.829 seconds (JVM running for 4.812)
+2020-09-19 21:46:50.430 [ INFO] [           main] c.m.s.c.CommonSpringBootTasksApplication : The Course and Author information for Author ID 2:
+2020-09-19 21:46:50.468 [ INFO] [           main] c.m.s.c.CommonSpringBootTasksApplication : AuthorCourseDto{courseName='Rapid Spring Boot Application Development', courseRating=4, courseDescription='Spring Boot gives all the power of the Spring Framework without all of the complexity', authorName='Steve Muller', authorBio='Author of several popular Spring and Pyhton courses'}
+2020-09-19 21:46:50.468 [ INFO] [           main] c.m.s.c.CommonSpringBootTasksApplication : AuthorCourseDto{courseName='Getting Started with Spring Security DSL', courseRating=2, courseDescription='Learn Spring Security DSL in easy steps', authorName='Steve Muller', authorBio='Author of several popular Spring and Pyhton courses'}
+2020-09-19 21:46:50.468 [ INFO] [           main] c.m.s.c.CommonSpringBootTasksApplication : AuthorCourseDto{courseName='Getting Started with Spring Cloud Kubernetes', courseRating=4, courseDescription='Master Spring Boot application deployment with Kubernetes', authorName='Steve Muller', authorBio='Author of several popular Spring and Pyhton courses'}
+2020-09-19 21:47:34.251 [ INFO] [kground-preinit] o.h.v.i.u.Version                        : HV000001: Hibernate Validator 6.1.5.Final
+2020-09-19 21:47:34.324 [ INFO] [           main] c.m.s.c.CommonSpringBootTasksApplication : Starting CommonSpringBootTasksApplication on DESKTOP-VBH5P79 with PID 29628 (C:\sbip\spring-boot-in-practice\chapter02\Maven\common-spring-boot-tasks-technique18\target\classes started by musib in C:\sbip\spring-boot-in-practice\chapter02\Maven\common-spring-boot-tasks-technique18)
+2020-09-19 21:47:34.329 [DEBUG] [           main] c.m.s.c.CommonSpringBootTasksApplication : Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2020-09-19 21:47:34.330 [ INFO] [           main] c.m.s.c.CommonSpringBootTasksApplication : No active profile set, falling back to default profiles: default
+2020-09-19 21:47:35.039 [ INFO] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-09-19 21:47:35.116 [ INFO] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68ms. Found 2 JPA repository interfaces.
+2020-09-19 21:47:35.685 [ INFO] [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2020-09-19 21:47:35.686 [ INFO] [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-09-19 21:47:35.686 [ INFO] [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-19 21:47:35.831 [ INFO] [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-09-19 21:47:35.980 [ INFO] [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-19 21:47:36.026 [ INFO] [         task-1] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-09-19 21:47:36.094 [ INFO] [         task-1] o.h.Version                              : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-09-19 21:47:36.266 [ INFO] [         task-1] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-09-19 21:47:36.403 [ INFO] [         task-1] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-09-19 21:47:36.431 [ INFO] [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2020-09-19 21:47:36.464 [ INFO] [           main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-09-19 21:47:36.597 [ INFO] [         task-1] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-09-19 21:47:36.629 [ INFO] [         task-1] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-09-19 21:47:37.311 [ INFO] [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-09-19 21:47:37.323 [ INFO] [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-09-19 21:47:37.590 [ INFO] [           main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-09-19 21:47:37.598 [ INFO] [           main] c.m.s.c.CommonSpringBootTasksApplication : Started CommonSpringBootTasksApplication in 3.688 seconds (JVM running for 4.635)
+2020-09-19 21:47:37.867 [ INFO] [           main] c.m.s.c.CommonSpringBootTasksApplication : The Course and Author information for Author ID 2:
+2020-09-19 21:47:37.931 [ INFO] [           main] c.m.s.c.CommonSpringBootTasksApplication : AuthorCourseDto{courseName='Rapid Spring Boot Application Development', courseRating=4, courseDescription='Spring Boot gives all the power of the Spring Framework without all of the complexity', authorName='Steve Muller', authorBio='Author of several popular Spring and Pyhton courses'}
+2020-09-19 21:47:37.931 [ INFO] [           main] c.m.s.c.CommonSpringBootTasksApplication : AuthorCourseDto{courseName='Getting Started with Spring Security DSL', courseRating=2, courseDescription='Learn Spring Security DSL in easy steps', authorName='Steve Muller', authorBio='Author of several popular Spring and Pyhton courses'}
+2020-09-19 21:47:37.931 [ INFO] [           main] c.m.s.c.CommonSpringBootTasksApplication : AuthorCourseDto{courseName='Getting Started with Spring Cloud Kubernetes', courseRating=4, courseDescription='Master Spring Boot application deployment with Kubernetes', authorName='Steve Muller', authorBio='Author of several popular Spring and Pyhton courses'}
