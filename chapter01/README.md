@@ -1,3 +1,6 @@
-# Spring Boot in Practice
+# Spring Boot in Practice - Chapter 01
 
-This repository contains source code for the book Spring Boot in Practice 
+Chapter 01 Source Code
+
+Additional Contents:
+
