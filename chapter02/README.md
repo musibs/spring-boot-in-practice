@@ -1,3 +1,3 @@
-# Spring Boot in Practice
+# Spring Boot in Practice - Chapter Two
 
-This repository contains source code for the book Spring Boot in Practice 
+Chapter Two Source Code

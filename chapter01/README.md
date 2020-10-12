@@ -1,6 +1,6 @@
-# Spring Boot in Practice - Chapter 01
+# Spring Boot in Practice - Chapter One
 
-Chapter 01 Source Code
+Chapter One Source Code
 
 Additional Contents:
 
