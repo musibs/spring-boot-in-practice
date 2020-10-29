@@ -11,7 +11,7 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Constraint(validatedBy = PasswordRuleValidator.class)
 public @interface Password {
-    String message() default "Password does not adhere to the specified rule";
+    String message() default "Password do not adhere to the specified rule";
     Class<?>[] groups() default {};
     Class<? extends Payload>[] payload() default {};
 }
