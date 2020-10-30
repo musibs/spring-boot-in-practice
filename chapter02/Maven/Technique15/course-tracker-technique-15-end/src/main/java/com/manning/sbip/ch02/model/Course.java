@@ -1,17 +1,12 @@
 package com.manning.sbip.ch02.model;
 
-import javax.persistence.*;
-import javax.validation.constraints.*;
-import java.util.HashSet;
-import java.util.Set;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotEmpty;
 
-@Entity(name = "COURSE")
-@Table(name = "COURSES")
 public class Course {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private int id;
 
 	@NotEmpty(message = "{course.name.nonempty}")
 	private String name;
@@ -28,18 +23,19 @@ public class Course {
 
 	public Course() {}
 
-	public Course(String name, String category, int rating, String description) {
+	public Course(int id, String name, String category, int rating, String description) {
+		this.id= id;
 		this.name = name;
 		this.category = category;
 		this.rating = rating;
 		this.description = description;
 	}
 
-	public Long getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 

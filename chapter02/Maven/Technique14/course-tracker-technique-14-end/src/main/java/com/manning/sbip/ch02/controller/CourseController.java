@@ -17,7 +17,6 @@ public class CourseController {
 
     private final CourseService courseService;
 
-    @Autowired
     public CourseController(CourseService courseService) {
         this.courseService = courseService;
     }
@@ -49,13 +48,13 @@ public class CourseController {
     }
 
     @GetMapping("/update/{id}")
-    public String showUpdateCourseForm(@PathVariable("id") long id, Model model) {
+    public String showUpdateCourseForm(@PathVariable("id") int id, Model model) {
         model.addAttribute("course", courseService.findCourseById(id).get());
         return "update-course";
     }
 
     @PutMapping("/update/{id}")
-    public String updateCourse(@PathVariable("id") long id, @Valid Course course, BindingResult result, Model model) {
+    public String updateCourse(@PathVariable("id") int id, @Valid Course course, BindingResult result, Model model) {
         if (result.hasErrors()) {
             course.setId(id);
             return "update-course";
@@ -65,7 +64,7 @@ public class CourseController {
     }
 
     @DeleteMapping("/delete/{id}")
-    public String deleteCourse(@PathVariable("id") long id, Model model) {
+    public String deleteCourse(@PathVariable("id") int id, Model model) {
         model.addAttribute("courses", courseService.deleteCourseById(id));
         return "redirect:/index";
     }

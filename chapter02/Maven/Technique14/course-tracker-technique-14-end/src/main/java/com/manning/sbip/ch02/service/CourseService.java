@@ -8,12 +8,12 @@ public interface CourseService {
 
     Iterable<Course> createCourse(Course course);
 
-    Optional<Course> findCourseById(long courseId);
+    Optional<Course> findCourseById(int courseId);
 
     Iterable<Course> findAllCourses();
 
     Iterable<Course> updateCourse(Course course);
 
-    Iterable<Course> deleteCourseById(long courseId);
+    Iterable<Course> deleteCourseById(int courseId);
 
 }
