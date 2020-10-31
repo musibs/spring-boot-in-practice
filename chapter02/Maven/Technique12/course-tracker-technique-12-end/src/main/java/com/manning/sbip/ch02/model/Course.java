@@ -1,77 +1,82 @@
 package com.manning.sbip.ch02.model;
 
-import javax.validation.constraints.Min;
-import javax.validation.constraints.Max;
+import javax.validation.constraints.*;
 
 public class Course {
 
-    private long id;
-    private String name;
-    private String category;
+	private int id;
 
-    @Min(value = 1, message = "A course should have a minimum of 1 rating")
-    @Max(value = 5, message = "A course should have a maximum of 5 rating")
-    private int rating;
+	@NotEmpty(message = "Course name field can't be empty")
+	private String name;
 
-    private String description;
+	@NotEmpty(message = "Course category field can't be empty")
+	private String category;
 
-    public Course() {}
+	@Min(value = 1)
+	@Max(value = 5)
+	private int rating;
 
-    public Course(String name, String category, int rating, String description) {
-        this.name = name;
-        this.category = category;
-        this.rating = rating;
-        this.description = description;
-    }
+	@NotEmpty(message = "Course description field can't be empty")
+	private String description;
 
-    public Long getId() {
-        return id;
-    }
+	public Course() {}
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+	public Course(int id, String name, String category, int rating, String description) {
+		this.id = id;
+		this.name = name;
+		this.category = category;
+		this.rating = rating;
+		this.description = description;
+	}
 
-    public String getName() {
-        return name;
-    }
+	public int getId() {
+		return id;
+	}
 
-    public void setName(String name) {
-        this.name = name;
-    }
+	public void setId(int id) {
+		this.id = id;
+	}
 
-    public String getCategory() {
-        return category;
-    }
+	public String getName() {
+		return name;
+	}
 
-    public void setCategory(String category) {
-        this.category = category;
-    }
+	public void setName(String name) {
+		this.name = name;
+	}
 
-    public int getRating() {
-        return rating;
-    }
+	public String getCategory() {
+		return category;
+	}
 
-    public void setRating(int rating) {
-        this.rating = rating;
-    }
+	public void setCategory(String category) {
+		this.category = category;
+	}
 
-    public String getDescription() {
-        return description;
-    }
+	public int getRating() {
+		return rating;
+	}
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
+	public void setRating(int rating) {
+		this.rating = rating;
+	}
 
-    @Override
-    public String toString() {
-        return "Course{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", category='" + category + '\'' +
-                ", rating=" + rating +
-                ", description='" + description + '\'' +
-                '}';
-    }
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	@Override
+	public String toString() {
+		return "Course{" +
+				"id=" + id +
+				", name='" + name + '\'' +
+				", category='" + category + '\'' +
+				", rating=" + rating +
+				", description='" + description + '\'' +
+				'}';
+	}
 }
