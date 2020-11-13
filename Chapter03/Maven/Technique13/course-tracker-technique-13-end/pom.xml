@@ -12,10 +12,10 @@
     <artifactId>course-tracker</artifactId>
     <version>1.0.0</version>
     <name>course-tracker</name>
-    <description>Spring Boot application to demonstrate the common tasks</description>
+    <description>Spring Boot application for Chapter 03</description>
 
     <properties>
-        <java.version>15</java.version>
+        <java.version>14</java.version>
     </properties>
 
     <dependencies>
