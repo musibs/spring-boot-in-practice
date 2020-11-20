@@ -26,10 +26,6 @@ class CourseTrackerSpringBootApplicationTests {
     private EntityManager entityManager;
 
     @Test
-    void contextLoads() {
-    }
-
-    @Test
     public void givenCoursesCreatedWhenLoadCoursesWithQueryThenExpectCorrectCourseDetails() {
         courseRepository.saveAll(getCourseList());
 
