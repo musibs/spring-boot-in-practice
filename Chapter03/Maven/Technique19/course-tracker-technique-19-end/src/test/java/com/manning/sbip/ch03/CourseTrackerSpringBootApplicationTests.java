@@ -23,12 +23,9 @@ class CourseTrackerSpringBootApplicationTests {
     }
 
     @Test
-    public void givenCoursesCreatedWhenLoadCoursesWithQueryThenExpectCorrectCourseDetails() {
+    public void givenCoursesCreatedWhenLoadCoursesBySpringCategoryThenExpectThreeCourses() {
         courseRepository.saveAll(getCourseList());
-        assertThat(Lists.newArrayList(courseRepository.findAllByCategory("Spring")).size()).isEqualTo(3);
-        assertThat(Lists.newArrayList(courseRepository.findAllByCategoryAndRatingGreaterThan("Spring", 3))).size().isEqualTo(2);
-        courseRepository.updateCourseRatingByName(4, "Getting Started with Spring Cloud Kubernetes");
-        assertThat(Lists.newArrayList(courseRepository.findAllByCategoryAndRatingGreaterThan("Spring", 3))).size().isEqualTo(3);
+        assertThat(courseRepository.findAllByCategoryAndRating("Spring", 4)).hasSize(1);
     }
 
     private List<Course> getCourseList() {

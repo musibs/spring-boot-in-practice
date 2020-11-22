@@ -19,13 +19,13 @@ class CourseTrackerSpringBootApplicationTests {
     private CourseRepository courseRepository;
 
     @Test
-    void contextLoads() {
-    }
-
-    @Test
-    public void givenCoursesCreatedWhenLoadCoursesBySpringCategoryThenExpectThreeCourses() {
+    public void givenCreateCourseWhenLoadTheCourseThenExpectSameCourse() {
         courseRepository.saveAll(getCourseList());
-        assertThat(Lists.newArrayList(courseRepository.findAllByCategory("Spring")).size()).isEqualTo(3);
+        assertThat(courseRepository.findAllByCategory("Spring")).hasSize(3);
+        assertThat(courseRepository.existsByName("JavaScript for All")).isTrue();
+        assertThat(courseRepository.existsByName("Mastering JavaScript")).isFalse();
+        assertThat(courseRepository.countByCategory("Python")).isEqualTo(2);
+        assertThat(courseRepository.findByNameStartsWith("Getting Started")).hasSize(3);
     }
 
     private List<Course> getCourseList() {

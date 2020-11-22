@@ -9,4 +9,5 @@ class CourseTrackerSpringBootApplicationTests {
     @Test
     void contextLoads() {
     }
+
 }

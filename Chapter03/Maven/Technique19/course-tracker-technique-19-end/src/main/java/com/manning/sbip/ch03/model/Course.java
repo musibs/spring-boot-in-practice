@@ -6,6 +6,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "COURSES")
+@NamedQuery(name = "Course.findAllByCategoryAndRating", query = "select c from Course c where c.category=?1 and c.rating=?2")
 public class Course {
 
     @Id
