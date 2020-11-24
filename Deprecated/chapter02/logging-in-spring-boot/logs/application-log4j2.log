@@ -1,2 +1,0 @@
-2020-08-06 23:27:42.821 [ WARN] [nio-8080-exec-3] c.m.s.c.c.LoggingController              : Logging with level WARN
-2020-08-06 23:27:42.843 [ERROR] [nio-8080-exec-3] c.m.s.c.c.LoggingController              : Logging with level ERROR

@@ -1,9 +1,0 @@
-2020-08-06 23:21:06.797 [ INFO] [nio-8080-exec-2] c.m.s.c.c.LoggingController              : Logging with level INFO
-2020-08-06 23:21:06.826 [ WARN] [nio-8080-exec-2] c.m.s.c.c.LoggingController              : Logging with level WARN
-2020-08-06 23:21:06.826 [ERROR] [nio-8080-exec-2] c.m.s.c.c.LoggingController              : Logging with level ERROR
-2020-08-06 23:21:07.108 [DEBUG] [nio-8080-exec-3] c.m.s.c.c.LoggingController              : Logging with level DEBUG
-2020-08-06 23:21:07.108 [ INFO] [nio-8080-exec-3] c.m.s.c.c.LoggingController              : Logging with level INFO
-2020-08-06 23:21:07.108 [ WARN] [nio-8080-exec-3] c.m.s.c.c.LoggingController              : Logging with level WARN
-2020-08-06 23:21:07.113 [ERROR] [nio-8080-exec-3] c.m.s.c.c.LoggingController              : Logging with level ERROR
-2020-08-06 23:21:07.415 [DEBUG] [nio-8080-exec-4] c.m.s.c.c.LoggingController              : Logging with level DEBUG
-2020-08-06 23:21:07.415 [ INFO] [nio-8080-exec-4] c.m.s.c.c.LoggingController              : Logging with level INFO

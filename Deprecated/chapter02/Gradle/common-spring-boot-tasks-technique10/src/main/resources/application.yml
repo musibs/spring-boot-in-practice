@@ -1,9 +1,0 @@
-spring:
-  datasource:
-    url: jdbc:mysql://localhost:3306/sbip
-    username: root
-    password: password
-    initialization-mode: always
-    platform: mysql
-  jpa:
-    show-sql: true
