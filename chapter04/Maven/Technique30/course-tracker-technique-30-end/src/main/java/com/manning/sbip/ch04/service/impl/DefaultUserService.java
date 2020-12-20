@@ -24,8 +24,13 @@ public class DefaultUserService implements UserService {
        applicationUser.setEmail(userDto.getEmail());
        applicationUser.setUserName(userDto.getUsername());
        applicationUser.setPassword(passwordEncoder.encode(userDto.getPassword()));
+       applicationUser.setVerified(false);
 
        return userRepository.save(applicationUser);
+    }
+
+    public ApplicationUser save(ApplicationUser applicationUser) {
+        return userRepository.save(applicationUser);
     }
 
     public ApplicationUser findByUsername(String username) {

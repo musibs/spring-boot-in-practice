@@ -1,8 +1,11 @@
 package com.manning.sbip.ch04.controller;
 
 import com.manning.sbip.ch04.dto.UserDto;
+import com.manning.sbip.ch04.event.UserRegistrationEvent;
+import com.manning.sbip.ch04.model.ApplicationUser;
 import com.manning.sbip.ch04.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -18,6 +21,9 @@ public class RegistrationController {
     @Autowired
     private UserService userService;
 
+    @Autowired
+    private ApplicationEventPublisher eventPublisher;
+
     @GetMapping("/adduser")
     public String register(Model model) {
         model.addAttribute("user", new UserDto());
@@ -29,7 +35,9 @@ public class RegistrationController {
         if(result.hasErrors()) {
             return "add-user";
         }
-        userService.createUser(userDto);
-        return "redirect:adduser?success";
+
+        ApplicationUser applicationUser = userService.createUser(userDto);
+        eventPublisher.publishEvent(new UserRegistrationEvent(applicationUser));
+        return "redirect:adduser?validate";
     }
 }

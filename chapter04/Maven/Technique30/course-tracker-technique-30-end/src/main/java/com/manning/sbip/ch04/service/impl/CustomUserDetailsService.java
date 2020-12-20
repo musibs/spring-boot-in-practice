@@ -23,7 +23,7 @@ public class CustomUserDetailsService implements UserDetailsService {
     		throw new UsernameNotFoundException("User with username "+username+" does not exists");
     	}
     	
-    	return User.withUsername(username).password(applicationUser.getPassword()).roles("USER").disabled(false).build();
+    	return User.withUsername(username).password(applicationUser.getPassword()).roles("USER").disabled(!applicationUser.isVerified()).build();
     	
     }
 }

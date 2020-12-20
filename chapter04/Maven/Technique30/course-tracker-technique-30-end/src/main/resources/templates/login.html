@@ -46,7 +46,8 @@
 			<div class="col-md-3"></div>
 			<div class="col-md-6">
 				<div th:if="${loginError}" class="alert alert-danger">Wrong Username or Password</div>
-				<div th:if="${verified}" class="alert alert-success">Account has been verified. Please sign-in</div>
+				<div th:if="${loginVerified}" class="alert alert-success">Account has been verified. Please sign-in</div>
+				<div th:if="${loginDisabled}" class="alert alert-danger">Account is not yet active. Please check your email</div>
 				<form th:action="@{/login}" method="post">
 					<div class="form-group">
 						<label for="username">Username</label>
