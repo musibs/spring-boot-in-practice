@@ -14,14 +14,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class EmailVerificationController {
 
-    private final EmailVerificationService verificationService;
-    private final UserService userService;
-
     @Autowired
-    public EmailVerificationController(EmailVerificationService verificationService, UserService userService) {
-        this.verificationService = verificationService;
-        this.userService = userService;
-    }
+    private EmailVerificationService verificationService;
+    @Autowired
+    private UserService userService;
 
     @GetMapping("/verify/email")
     public String verifyEmail(@RequestParam String id) {
@@ -31,7 +27,8 @@ public class EmailVerificationController {
             ApplicationUser user = userService.findByUsername(username);
             user.setVerified(true);
             userService.save(user);
+            return "redirect:/login-verified";
         }
-        return "redirect:/login-verified";
+        return "redirect:/login-error";
     }
 }

@@ -27,7 +27,7 @@ public class EmailVerificationListener implements ApplicationListener<UserRegist
     public void onApplicationEvent(UserRegistrationEvent event) {
     	ApplicationUser user = event.getUser();
         String username = user.getUsername();
-        String verificationId = verificationService.createVerification(username);
+        String verificationId = verificationService.generateVerification(username);
         String email = event.getUser().getEmail();
 
         SimpleMailMessage message = new SimpleMailMessage();
